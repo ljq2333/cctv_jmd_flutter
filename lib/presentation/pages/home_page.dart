@@ -1,5 +1,5 @@
-import 'dart:html' as html;
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:cctv_jmd_flutter/core/constants/channel_constants.dart';
 import 'package:cctv_jmd_flutter/presentation/providers/state_providers.dart';
@@ -53,10 +53,13 @@ class HomePage extends ConsumerWidget {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: ElevatedButton.icon(
-              onPressed: () {
+              onPressed: () async {
                 final channel = ChannelConstants.getChannelById(channelId);
                 if (channel != null) {
-                  html.window.open(channel.liveUrl, '_blank');
+                  final uri = Uri.parse(channel.liveUrl);
+                  if (await canLaunchUrl(uri)) {
+                    await launchUrl(uri, mode: LaunchMode.externalApplication);
+                  }
                 }
               },
               icon: const Icon(Icons.live_tv),
