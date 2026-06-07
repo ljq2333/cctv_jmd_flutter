@@ -1,5 +1,7 @@
+import 'dart:html' as html;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:cctv_jmd_flutter/core/constants/channel_constants.dart';
 import 'package:cctv_jmd_flutter/presentation/providers/state_providers.dart';
 import 'package:cctv_jmd_flutter/presentation/providers/data_providers.dart';
 import 'package:cctv_jmd_flutter/presentation/widgets/channel_drawer.dart';
@@ -51,7 +53,12 @@ class HomePage extends ConsumerWidget {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: ElevatedButton.icon(
-              onPressed: () {},
+              onPressed: () {
+                final channel = ChannelConstants.getChannelById(channelId);
+                if (channel != null) {
+                  html.window.open(channel.liveUrl, '_blank');
+                }
+              },
               icon: const Icon(Icons.live_tv),
               label: const Text('直播入口'),
             ),

@@ -21,11 +21,15 @@ class DatePickerWidget extends ConsumerWidget {
         ),
         TextButton(
           onPressed: () async {
+            final lastDate = DateTime.now().add(const Duration(days: 2));
+            final initialDate = selectedDate.isAfter(lastDate)
+                ? lastDate
+                : selectedDate;
             final date = await showDatePicker(
               context: context,
-              initialDate: selectedDate,
+              initialDate: initialDate,
               firstDate: DateTime.now().subtract(const Duration(days: 30)),
-              lastDate: DateTime.now().add(const Duration(days: 2)),
+              lastDate: lastDate,
             );
             if (date != null) {
               ref.read(selectedDateProvider.notifier).state = date;

@@ -15,6 +15,7 @@ class HiveInitializer {
     await Hive.openBox(StorageConstants.remindersBox);
     await Hive.openBox(StorageConstants.cacheBox);
     await Hive.openBox(StorageConstants.settingsBox);
+    await Hive.openBox('service_cache');
 
     _initialized = true;
   }
