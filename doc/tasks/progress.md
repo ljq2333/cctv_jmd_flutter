@@ -15,7 +15,7 @@
 - [x] [core-utils.md](core-utils.md) - 工具类模块
 
 ### Data 层（数据层）
-- [ ] [data-models.md](data-models.md) - 数据模型模块
+- [x] [data-models.md](data-models.md) - 数据模型模块
 - [ ] [data-repositories.md](data-repositories.md) - 仓库实现模块
 - [ ] [data-datasources.md](data-datasources.md) - 数据源模块
 
@@ -84,11 +84,11 @@ Core Layer
 | 层级 | 模块数 | 状态 |
 |------|--------|------|
 | Core层 | 5 | 5/5 完成 |
-| Data层 | 3 | 待开始 |
+| Data层 | 3 | 1/3 完成 |
 | Domain层 | 2 | 待开始 |
 | Presentation层 | 3 | 待开始 |
 | Services层 | 3 | 待开始 |
-| **总计** | **16** | **5/16 完成** |
+| **总计** | **16** | **6/16 完成** |
 
 ---
 
@@ -102,3 +102,4 @@ Core Layer
 | 2026-06-07 | 完成 core-utils 模块（工具类） |
 | 2026-06-07 | 完成 core-storage 模块（存储层） |
 | 2026-06-07 | 完成 core-network 模块（网络层） |
+| 2026-06-07 | 完成 data-models 模块（数据模型） |
