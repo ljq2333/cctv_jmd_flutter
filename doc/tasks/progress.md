@@ -30,7 +30,7 @@
 
 ### Services 层（服务层）
 - [x] [services-notification.md](services-notification.md) - 通知服务模块
-- [ ] [services-calendar.md](services-calendar.md) - 日历服务模块
+- [x] [services-calendar.md](services-calendar.md) - 日历服务模块
 - [x] [services-cache.md](services-cache.md) - 缓存服务模块
 
 ---
@@ -87,8 +87,8 @@ Core Layer
 | Data层 | 3 | 3/3 完成 |
 | Domain层 | 2 | 2/2 完成 |
 | Presentation层 | 3 | 待开始 |
-| Services层 | 3 | 2/3 完成 |
-| **总计** | **16** | **12/16 完成** |
+| Services层 | 3 | 3/3 完成 |
+| **总计** | **16** | **13/16 完成** |
 
 ---
 
@@ -109,3 +109,4 @@ Core Layer
 | 2026-06-07 | 完成 domain-usecases 模块（用例） |
 | 2026-06-07 | 完成 services-cache 模块（缓存服务） |
 | 2026-06-07 | 完成 services-notification 模块（通知服务） |
+| 2026-06-07 | 完成 services-calendar 模块（日历服务） |
