@@ -25,7 +25,7 @@
 
 ### Presentation 层（表现层）
 - [ ] [presentation-pages.md](presentation-pages.md) - 页面模块
-- [ ] [presentation-widgets.md](presentation-widgets.md) - 组件模块
+- [x] [presentation-widgets.md](presentation-widgets.md) - 组件模块
 - [x] [presentation-providers.md](presentation-providers.md) - Providers模块
 
 ### Services 层（服务层）
@@ -86,9 +86,9 @@ Core Layer
 | Core层 | 5 | 5/5 完成 |
 | Data层 | 3 | 3/3 完成 |
 | Domain层 | 2 | 2/2 完成 |
-| Presentation层 | 3 | 1/3 完成 |
+| Presentation层 | 3 | 2/3 完成 |
 | Services层 | 3 | 3/3 完成 |
-| **总计** | **16** | **14/16 完成** |
+| **总计** | **16** | **15/16 完成** |
 
 ---
 
@@ -111,3 +111,4 @@ Core Layer
 | 2026-06-07 | 完成 services-notification 模块（通知服务） |
 | 2026-06-07 | 完成 services-calendar 模块（日历服务） |
 | 2026-06-07 | 完成 presentation-providers 模块（Providers） |
+| 2026-06-07 | 完成 presentation-widgets 模块（组件） |
