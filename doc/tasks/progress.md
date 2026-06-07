@@ -17,7 +17,7 @@
 ### Data 层（数据层）
 - [x] [data-models.md](data-models.md) - 数据模型模块
 - [ ] [data-repositories.md](data-repositories.md) - 仓库实现模块
-- [ ] [data-datasources.md](data-datasources.md) - 数据源模块
+- [x] [data-datasources.md](data-datasources.md) - 数据源模块
 
 ### Domain 层（领域层）
 - [x] [domain-repositories.md](domain-repositories.md) - 仓库接口模块
@@ -84,11 +84,11 @@ Core Layer
 | 层级 | 模块数 | 状态 |
 |------|--------|------|
 | Core层 | 5 | 5/5 完成 |
-| Data层 | 3 | 1/3 完成 |
+| Data层 | 3 | 2/3 完成 |
 | Domain层 | 2 | 1/2 完成 |
 | Presentation层 | 3 | 待开始 |
 | Services层 | 3 | 待开始 |
-| **总计** | **16** | **7/16 完成** |
+| **总计** | **16** | **8/16 完成** |
 
 ---
 
@@ -104,3 +104,4 @@ Core Layer
 | 2026-06-07 | 完成 core-network 模块（网络层） |
 | 2026-06-07 | 完成 data-models 模块（数据模型） |
 | 2026-06-07 | 完成 domain-repositories 模块（仓库接口） |
+| 2026-06-07 | 完成 data-datasources 模块（数据源） |
