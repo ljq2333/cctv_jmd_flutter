@@ -23,6 +23,14 @@ jobs:
         with:
           channel: stable
 
+      - name: Set up signing keystore
+        run: |
+          echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > android/app/release-key.jks
+          echo "storePassword=${{ secrets.KEYSTORE_PASSWORD }}" > android/key.properties
+          echo "keyPassword=${{ secrets.KEY_PASSWORD }}" >> android/key.properties
+          echo "keyAlias=${{ secrets.KEY_ALIAS }}" >> android/key.properties
+          echo "storeFile=release-key.jks" >> android/key.properties
+
       - name: Install dependencies
         run: flutter pub get
 
