@@ -9,7 +9,7 @@
 
 ### Core 层（核心基础设施）
 - [x] [core-constants.md](core-constants.md) - 常量定义模块
-- [ ] [core-errors.md](core-errors.md) - 错误处理模块
+- [x] [core-errors.md](core-errors.md) - 错误处理模块
 - [ ] [core-network.md](core-network.md) - 网络层模块
 - [ ] [core-storage.md](core-storage.md) - 存储层模块
 - [ ] [core-utils.md](core-utils.md) - 工具类模块
@@ -83,12 +83,12 @@ Core Layer
 
 | 层级 | 模块数 | 状态 |
 |------|--------|------|
-| Core层 | 5 | 1/5 完成 |
+| Core层 | 5 | 2/5 完成 |
 | Data层 | 3 | 待开始 |
 | Domain层 | 2 | 待开始 |
 | Presentation层 | 3 | 待开始 |
 | Services层 | 3 | 待开始 |
-| **总计** | **16** | **1/16 完成** |
+| **总计** | **16** | **2/16 完成** |
 
 ---
 
@@ -98,3 +98,4 @@ Core Layer
 |------|----------|
 | 2026-06-07 | 创建项目任务分解文档 |
 | 2026-06-07 | 完成 core-constants 模块（常量定义） |
+| 2026-06-07 | 完成 core-errors 模块（错误处理） |
