@@ -5,6 +5,13 @@
   "skills": {
     "paths": [".opencode/skills"]
   },
+  "mcp": {
+    "memory": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-memory"],
+      "enabled": true
+    }
+  },
   "permission": {
     "edit": "allow",
     "bash": {

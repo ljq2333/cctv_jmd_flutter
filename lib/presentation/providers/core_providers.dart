@@ -4,6 +4,8 @@ import 'package:cctv_jmd_flutter/core/network/cntv_api_service.dart';
 import 'package:cctv_jmd_flutter/core/network/network_info.dart';
 import 'package:cctv_jmd_flutter/core/storage/hive_storage_service.dart';
 import 'package:cctv_jmd_flutter/core/storage/storage_service.dart';
+import 'package:cctv_jmd_flutter/services/calendar/calendar_service.dart';
+import 'package:cctv_jmd_flutter/services/calendar/device_calendar_service.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 
 final dioClientProvider = Provider<DioClient>((ref) {
@@ -21,4 +23,8 @@ final storageServiceProvider = Provider<StorageService>((ref) {
 
 final networkInfoProvider = Provider<NetworkInfo>((ref) {
   return NetworkInfo(Connectivity());
+});
+
+final calendarServiceProvider = Provider<CalendarService>((ref) {
+  return DeviceCalendarService();
 });
