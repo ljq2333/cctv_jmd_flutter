@@ -56,6 +56,25 @@
 
 ---
 
+## 📱 界面预览
+
+### 节目页
+<p align="center">
+  <img src="img/节目页.jpg" alt="节目页" width="400">
+</p>
+
+### 日程页
+<p align="center">
+  <img src="img/日程页.jpg" alt="日程页" width="400">
+</p>
+
+### 我的页
+<p align="center">
+  <img src="img/我的页.jpg" alt="我的页" width="400">
+</p>
+
+---
+
 ## 🏗️ 技术架构
 
 ### 技术栈
